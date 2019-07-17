@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-6-15 17:38:40 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="com.woniu.b">
+	<class name="Teacher">
+		<id name="tid">
+			<generator class="native"></generator>
+		</id>
+		<property name="tname" />
+		
+		<set name="students" table="t_s">
+			<key column="teacher_id"></key>
+			<many-to-many column="student_id" class="Student"></many-to-many>
+		</set>
+	</class>
+ 
+</hibernate-mapping>

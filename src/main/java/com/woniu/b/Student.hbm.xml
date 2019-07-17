@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2019-6-15 17:38:40 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping package="com.woniu.b">
+	<class name="Student">
+		<id name="sid">
+			<generator class="native"></generator>
+		</id>
+		<property name="sname" />
+	</class>
+</hibernate-mapping>
